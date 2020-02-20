@@ -1,0 +1,22 @@
+import math
+import os
+import random
+import re
+import sys
+
+def compareTriplets(a, b):
+    al=0
+    bb=0
+    for i in range(3):
+        if a[i]>b[i]:
+            al +=1
+        if b[i]>a[i]:
+            bb +=1
+        else:
+            al +=0
+            bb +=0
+    return(al,bb)
+a=[3,4,6]
+b=[4,5,7]
+print(compareTriplets(a, b))
+
